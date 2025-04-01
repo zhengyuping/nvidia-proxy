@@ -1,6 +1,6 @@
 Deno.serve(async (req) => {
   const url = new URL(req.url)
-  url.hostname = 'api.openai.com'
+  url.hostname = 'integrate.api.nvidia.com'
   return fetch(url, {
     method: req.method,
     headers: {
